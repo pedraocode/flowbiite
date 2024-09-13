@@ -1,0 +1,139 @@
+body {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    background-color: rgb(17, 24, 38);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem; 
+    margin: 0;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    padding: 20px;
+}
+
+.box, .box2 {
+    background-color: rgb(31, 42, 56);
+    border-radius: .75rem;
+    border: 3px solid rgb(55, 65, 82);
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 490px; 
+    width: 100%;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.125rem;
+    margin: 0 0 10px 0;
+}
+
+p {
+    color: rgb(157, 164, 176);
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Estilo para as imagens fora das caixas */
+.profile-img, .profile-img2 {
+    margin-top: 20px;
+    display: block;
+    width: 80px; /* Tamanho da imagem */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name, .title, .name2, .title2 {
+    display: block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1rem; 
+    margin: 10px 0 5px 0;
+}
+
+.title, .title2 {
+    color: rgb(157, 164, 176);
+    font-size: 0.875rem;
+    margin: 0;
+}
+.box3 {
+    background-color: rgb(31, 42, 56);
+    border-radius: .75rem;
+    border: 3px solid rgb(55, 65, 82);
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 490px; 
+    width: 100%;
+    padding-bottom: 82px;
+}
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box, .box2 {
+        max-width: 100%;
+    }
+
+    .profile-img, .profile-img2 {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem; 
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .box, .box2 {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+    .profile-img, .profile-img2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .name, .title, .name2, .title2 {
+        font-size: 0.875rem;
+    }
+}
